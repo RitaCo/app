@@ -13,7 +13,7 @@
  */
 namespace App\View;
 
-use Cake\View\View;
+use Rita\Core\View\View;
 
 /**
  * App View class

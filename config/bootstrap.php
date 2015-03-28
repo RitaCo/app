@@ -85,7 +85,7 @@ if (!Configure::read('debug')) {
  * Set server timezone to UTC. You can change it to another timezone of your
  * choice but using UTC makes time calculations / conversions easier.
  */
-date_default_timezone_set('UTC');
+date_default_timezone_set('Asia/Tehran');
 
 /**
  * Configure the mbstring extension to use the correct encoding.
@@ -96,7 +96,7 @@ mb_internal_encoding(Configure::read('App.encoding'));
  * Set the default locale. This controls how dates, number and currency is
  * formatted and sets the default language to use for translations.
  */
-ini_set('intl.default_locale', 'en_US');
+ini_set('intl.default_locale', 'fa_IR@calendar=persian');
 
 /**
  * Register application error and exception handlers.
@@ -168,6 +168,12 @@ Request::addDetector('tablet', function ($request) {
  * Inflector::rules('uninflected', ['dontinflectme']);
  * Inflector::rules('transliteration', ['/å/' => 'aa']);
  */
+
+/**
+ * Rita Core Plugins Loading
+ */
+Plugin::load('Rita/Tools',  ['bootstrap' => true, 'routes' => true]);
+Plugin::load('Rita/Core', ['bootstrap' => true, 'routes' => true]);
 
 /**
  * Plugins need to be loaded manually, you can either load them one by one or all of them in a single call

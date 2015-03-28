@@ -14,7 +14,7 @@
  */
 namespace App\Controller;
 
-use Cake\Controller\Controller;
+use Rita\Core\Controller\Controller;
 
 /**
  * Application Controller
@@ -27,15 +27,4 @@ use Cake\Controller\Controller;
 class AppController extends Controller
 {
 
-    /**
-     * Initialization hook method.
-     *
-     * Use this method to add common initialization code like loading components.
-     *
-     * @return void
-     */
-    public function initialize()
-    {
-        $this->loadComponent('Flash');
-    }
 }
