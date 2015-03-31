@@ -42,7 +42,7 @@ use Cake\Routing\Router;
 Router::defaultRouteClass('DashedRoute');
 Plugin::routes();
 
-Router::scope('/', function ($routes) {
+Router::scope('/', ['prefix' => 'front'], function ($routes) {
     /**
      * Here, we are connecting '/' (base path) to a controller called 'Pages',
      * its action called 'display', and we pass a param to select the view file
