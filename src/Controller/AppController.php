@@ -14,7 +14,7 @@
  */
 namespace App\Controller;
 
-use Rita\Core\Controller\RitaController => Controller;
+use Rita\Core\Controller\RitaController as Controller;
 
 /**
  * Application Controller

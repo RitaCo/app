@@ -1,19 +1,29 @@
 <?php
-namespace Rita\Core\Controller;
+namespace App\Controller\Front;
 
-use Rita\Core\Controller\AppController;
+use App\Controller\AppController;
 
 class IndexController extends AppController
 {
     
     
+    /**
+     * IndexController::outOfService()
+     * 
+     * @return void
+     */
     public function outOfService()
     {
         
     }
     
     
-    publick function welcome()
+    /**
+     * IndexController::welcome()
+     * 
+     * @return void
+     */
+    public function welcome()
     {
     }
 }
