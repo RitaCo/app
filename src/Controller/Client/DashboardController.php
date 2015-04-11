@@ -1,7 +1,7 @@
 <?php
-namespace Rita\Core\Controller\Client;
+namespace App\Controller\Client;
 
-use Rita\Core\Controller\AppController;
+use App\Controller;
 use Cake\Event\Event;
 
 class DashboardController extends AppController
