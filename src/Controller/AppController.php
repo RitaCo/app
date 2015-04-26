@@ -27,4 +27,16 @@ use Rita\Core\Controller\RitaController as Controller;
 class AppController extends Controller
 {
 
+    /**
+     * Initialization hook method.
+     *
+     * Use this method to add common initialization code like loading components.
+     *
+     * @return void
+     */
+    public function initialize()
+    {
+        parent::initialize();
+    }
+
 }
