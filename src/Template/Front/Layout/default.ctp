@@ -1,21 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html dir="rtl">
 <head>
     <?= $this->Html->charset() ?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?= $this->Rita->pageTitle('اپلیکیشن ریتا'); ?>
+    <?= $this->Rita->getPageTitle('اپلیکیشن ریتا'); ?>
     <?= $this->Rita->pageDescription('سیستم تولید محتوای ریتا'); ?>
     <?= $this->Rita->pageKeywords(); ?>    
     <?= $this->Html->meta('icon') ?>
-
 	<?= $this->Rita->loadingCSS() ?>
-    <?= $this->Rita->loadingJS() ?>
-        
     <?= $this->fetch('meta') ?>
-    <?= $this->fetch('css') ?>
-    <?= $this->fetch('script') ?>
 </head>
-<body>
+<body id="<?= $this->getLayoutID(); ?>">
     <header>
         <div class="header-title">
             <span><?= $this->fetch('title') ?></span>
@@ -42,5 +37,7 @@
             </a>  	
         </footer>
     </div>
+    <?= $this->Rita->loadingJS() ?>
+    <?= $this->fetch('script') ?>     
 </body>
 </html>
