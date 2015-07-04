@@ -14,9 +14,12 @@
  */
 namespace App\Controller;
 
+<<<<<<< HEAD
 use Rita\Core\Controller\RitaController as Controller;
+=======
 use Cake\Controller\Controller;
 use Cake\Event\Event;
+>>>>>>> 156eb5f140dbb813c64d12eb806618479f2cdada
 
 /**
  * Application Controller
@@ -39,6 +42,10 @@ class AppController extends Controller
     public function initialize()
     {
         parent::initialize();
+<<<<<<< HEAD
+    }
+
+=======
 
         $this->loadComponent('RequestHandler');
         $this->loadComponent('Flash');
@@ -58,5 +65,5 @@ class AppController extends Controller
             $this->set('_serialize', true);
         }
     }
-
+>>>>>>> 156eb5f140dbb813c64d12eb806618479f2cdada
 }
