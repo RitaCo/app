@@ -102,7 +102,7 @@ ini_set('intl.default_locale', 'fa_IR@calendar=persian');
 /**
  * Register application error and exception handlers.
  */
-$isCli = php_sapi_name() === 'cli';
+$isCli = PHP_SAPI === 'cli';
 if ($isCli) {
     (new ConsoleErrorHandler(Configure::read('Error')))->register();
 } else {
@@ -205,4 +205,5 @@ DispatcherFactory::add('ControllerFactory');
  * Enable default locale format parsing.
  * This is needed for matching the auto-localized string output of Time() class when parsing dates.
  */
+Type::build('date')->useLocaleParser();
 Type::build('datetime')->useLocaleParser();
